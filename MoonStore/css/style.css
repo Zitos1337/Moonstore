@@ -1,0 +1,132 @@
+:root {
+   --shadow: #5ACBFF;
+   --azul-claro:#5ACBFF;
+   --branco: white;
+   --preto: black;
+   --body-background: rgb(12, 12, 12);
+   --modo-claro-letra: rgba(0, 0, 0, 0.884);
+   --modo-claro-background: rgba(255, 255, 255, 0.925);
+}
+
+body {
+   background-color: var(--body-background);
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0px;
+}
+
+h1, h2, h3, p {
+   margin: 0px;
+}
+
+img, embed {
+   width: 96%;
+}
+
+li {
+   list-style: none;
+}
+
+h1 {
+   color: var(--branco);
+   font-size: 8rem;
+   filter: drop-shadow(0 0 0.2rem var(--shadow));
+   margin-right: 160px;
+}
+
+a {
+   text-decoration: none;
+   color: var(--branco);
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 5rem 0;
+   gap: 2rem;
+   margin-left: 12rem;
+   filter: drop-shadow(0 0 0.2rem var(--shadow));
+}
+
+.logo img {
+   width: 250px;
+}
+
+.menu-itens {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 4rem;
+}
+
+.menu-itens a {
+   padding: 1rem 0;
+   color: var(--branco);
+   font-size: 2rem;
+   transition: 0.3s;
+}
+
+.menu-itens a::after {
+   content: "";
+   width: 0px;
+   height: 2px;
+   position: relative;
+   display: block;
+   background: var(--azul-claro);
+   transition: 0.5s;
+}
+
+.menu-itens a:hover::after {
+   width: 101%;
+}
+
+.fundo {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   place-items: center;
+   gap: 10rem 4rem;
+   padding: 10rem 0;
+}
+
+
+.fundo img {
+   object-fit: cover;
+   object-position: top right;
+   border-radius: 2rem;
+   box-shadow: 0px 0px 10px var(--shadow);
+}
+
+.fundo img:hover {
+   box-shadow: 0px 0px 50px var(--shadow);
+   transition: 0.5s;
+}
+
+.contatos {
+   display: flex;
+   gap: 5rem;
+   justify-content: center;
+   padding: 5rem 0;
+}
+
+.contatos a {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.2rem;
+   font-size: 1.3rem;
+   transition: 0.3s;
+   color: var(--preto);
+}
+
+footer {
+   background: var(--branco);
+}
+
+footer img {
+   width: 2rem;
+}
+
+.contatos a:hover {
+   color: var(--azul-claro);
+   filter: drop-shadow(0 0.1rem 0.2rem var(--shadow));
+}
